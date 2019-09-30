@@ -44,7 +44,7 @@ function TabDoorContent() {
 export { TabDoor, TabDoorContent };
 
 const TabContainContainer = styled.div`
-  background: var(--main-dark);
+  background: var(--main-deep-dark);
 
   .container{
       margin 0 10%;
@@ -62,5 +62,13 @@ const TabContainContainer = styled.div`
       font-size:2rem;
       padding:2.5rem;
   }
+  span {
+    grid-column: 1/ span 8;
+    font-size: 1.3rem;
+  }
 
+  .btn {
+    margin: 1.25rem 1.25rem 1.25rem;
+    grid-column: 10/ span 12;
+  }
 `;

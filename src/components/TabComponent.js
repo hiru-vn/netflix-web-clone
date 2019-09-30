@@ -2,8 +2,8 @@ import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import {TabDoor,TabDoorContent} from "./tabs/TabDoor";
 import "../css/TabsNav.css";
-import TabDevices from "./tabs/TabDevices";
-import TabPrice from "./tabs/TabPrice";
+import {TabDevices,TabDevicesContent} from "./tabs/TabDevices";
+import {TabPrice,TabPriceContent} from "./tabs/TabPrice";
 
 class TabComponent extends React.Component {
   constructor() {
@@ -46,6 +46,12 @@ class TabComponent extends React.Component {
           </TabList>
           <TabPanel>
               <TabDoorContent></TabDoorContent>
+          </TabPanel>
+          <TabPanel>
+              <TabDevicesContent></TabDevicesContent>
+          </TabPanel>
+          <TabPanel>
+              <TabPriceContent></TabPriceContent>
           </TabPanel>
         </Tabs>
       </div>
